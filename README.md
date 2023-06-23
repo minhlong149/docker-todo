@@ -35,7 +35,7 @@ Learn how to package code into standard units of software by utilize containers 
 
 ### Ubuntu images
 
-- Run an Ubuntu container with the command `docker run -it ubuntu`. The `-it` flag is used to make the container interactive, so that you can use the terminal inside the container. After the options, we defined that image to run is `ubuntu`. Then we have the command `bash` to be executed inside the container when we start it.
+- Run an Ubuntu container with the command `docker run -it ubuntu bash`. The `-it` flag is used to make the container interactive, so that you can use the terminal inside the container. After the options, we defined that image to run is `ubuntu`. Then we have the command `bash` to be executed inside the container when we start it.
 
 - To list all the containers that *have been run*, run `docker ps -a`. You can start a stopped container with `docker start <CONTAINER-ID-OR-CONTAINER-NAME>`. To stop a running container, run `docker stop <CONTAINER-ID-OR-CONTAINER-NAME>` or `docker kill <CONTAINER-ID-OR-CONTAINER-NAME>`.
 
