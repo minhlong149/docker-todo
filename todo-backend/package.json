@@ -4,6 +4,11 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
+    "predocker": "docker build . -t todo-backend",
+    "docker": "docker run -p 3000:3000 todo-backend",
+    "compose": "docker compose up",
+    "compose:db": "docker compose up database",
+    "precompose:db": "docker compose down --volumes",
     "dev": "nodemon ./bin/www"
   },
   "dependencies": {

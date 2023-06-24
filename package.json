@@ -2,7 +2,7 @@
   "name": "fs-docker-todo",
   "scripts": {
     "ubuntu": "docker container run -it ubuntu bash",
-    "preserver": "docker build todo-backend -t todo-backend",
-    "server": "docker run -p 3000:3000 todo-backend"
+    "server:docker": "cd todo-backend && npm run docker",
+    "server:compose": "cd todo-backend && npm run compose"
   }
 }
